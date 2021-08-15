@@ -1,7 +1,5 @@
 #!/bin/sh
-
-# Discord Webhook URL
-url=""
+# 環境変数 "URL" に Discord の Webhook URL を指定してください。
 
 if [ $# = 1 ]; then
 
@@ -85,7 +83,7 @@ if [ $# = 1 ]; then
     fi
     
     # cURL で Webhook メッセージを送信
-    curl -H "Content-Type: application/json" -X POST -d '{"username": "EPGStation", "content": "'"$content"'"}' $url
+    curl -H "Content-Type: application/json" -X POST -d '{"username": "EPGStation", "content": "'"$content"'"}' $URL
 else
     echo "引数を指定してください。"
 fi
