@@ -1,7 +1,10 @@
 # EPGS-to-Discord-v2
-
+⏺ Post EPGStation notifications to Discord via Webhook
 ## Setup
-1. Specify Discord Webhook URL in the environment variable.
+1. Create `config.conf` and paste your Discord Webhook URL like below:
+```
+URL='https://discord.com/api/webhooks/hoge/fuga'
+```
 2. Paste below to EPGStation's `config.yml` and edit path.
 
 ```

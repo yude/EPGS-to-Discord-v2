@@ -1,5 +1,7 @@
 #!/bin/sh
-# 環境変数 "URL" に Discord の Webhook URL を指定してください。
+
+# config.conf から Discord Webhook の URL を読み込む。
+source config.conf
 
 if [ $# = 1 ]; then
 
