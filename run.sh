@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # config.conf から Discord Webhook の URL を読み込む。
-source config.conf
+source ./config.conf
 
 if [ $# = 1 ]; then
 
