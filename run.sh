@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. .env
+. ./.env
 
 if [ $# = 1 ]; then
 
@@ -84,7 +84,7 @@ if [ $# = 1 ]; then
     fi
     
     # cURL で Webhook メッセージを送信
-    curl -H "Content-Type: application/json" -X POST -d '{"username": "EPGStation", "content": "'"$content"'"}' $URL
+    curl -H "Content-Type: application/json" -X POST -d '{"username": "EPGStation", "content": "'"$content"'"}' $WEBHOOK_URL
 else
     echo "引数を指定してください。"
 fi
