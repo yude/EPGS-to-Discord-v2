@@ -1,6 +1,11 @@
 #!/bin/sh
 
-. ./.env
+if [ -e ./.env ]
+then
+    . ./.env
+else
+    . /app/EPGS-to-Discord-v2/.env
+fi
 
 if [ $# = 1 ]; then
 
