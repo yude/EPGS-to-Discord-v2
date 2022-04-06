@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# Discord Webhook の URL を指定する。
-URL=""
+source .env
 
 if [ $# = 1 ]; then
 
