@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source .env
+. .env
 
 if [ $# = 1 ]; then
 
